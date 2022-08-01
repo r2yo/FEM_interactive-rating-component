@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="h-screen border border-red-500 bg-VeryVeryDarkBlue flex flex-col justify-center items-center px-6 font-body">
+
+<div id="main" class="container mx-auto rounded-xl p-6 sm:max-w-screen-sm">
+
+  <div id="box-1" class="space-y-6">
+    <div class="bg-DarkBlue w-fit p-3 rounded-full">
+      <img src="images/icon-star.svg" alt="" class="h-4">
+    </div>
+    <!-- Rating state start -->
+    <div class="space-y-2">
+      
+      <h1 class="text-white text-2xl font-bold">How did we do?</h1>
+      <p class="text-MediumGray leading-5 text-sm">
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+      
+    </div>
+    
+    
+    <div>
+      <ul class="flex justify-between">
+        <li class="text-MediumGray font-bold cursor-pointer bg-DarkBlue rounded-full py-3 px-5 text-center hover:bg-Orange hover:text-white transition ease-in-out delay-75">1</li>
+        <li class="text-MediumGray font-bold cursor-pointer bg-DarkBlue rounded-full py-3 px-5 text-center hover:bg-Orange hover:text-white transition ease-in-out delay-75">2</li>
+        <li class="text-MediumGray font-bold cursor-pointer bg-DarkBlue rounded-full py-3 px-5 text-center hover:bg-Orange hover:text-white transition ease-in-out delay-75">3</li>
+        <li class="text-MediumGray font-bold cursor-pointer bg-DarkBlue rounded-full py-3 px-5 text-center hover:bg-Orange hover:text-white transition ease-in-out delay-75">4</li>
+        <li class="text-MediumGray font-bold cursor-pointer bg-DarkBlue rounded-full py-3 px-5 text-center hover:bg-Orange hover:text-white transition ease-in-out delay-75">5</li>
+      </ul>
+    </div>
+    
+    <button id="submitButton" class="bg-Orange text-white py-3 px-4 w-full rounded-full text-sm uppercase tracking-widest font-bold">Submit</button>
+  </div>
+  
+  <div id="box-2" class="space-y-6 hidden">
+    <div class="flex justify-center">
+      <img src="images/illustration-thank-you.svg" alt="">
+    </div>
+    <!-- Rating state end -->
+    
+    <!-- Thank you state start -->
+    
+    <div id="msgBox" class="text-Orange text-opacity-60 font-bold bg-DarkBlue w-fit py-1 px-6 text-center mx-auto text-sm rounded-full">
+      
+    </div>
+    
+    <h1 class="text-center text-2xl text-white font-bold">
+      Thank you!
+    </h1>
+    
+    <p class="text-sm text-MediumGray text-center">
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
+    <!-- Thank you state end --> 
+  </div>
+</div>
+
+<div class="attribution mt-4 text-MediumGray">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">r2yo</a>.
+</div>
+<script src="app.js"></script>
+</body>
+</html>
